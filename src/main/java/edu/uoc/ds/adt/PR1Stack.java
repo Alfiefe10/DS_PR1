@@ -14,7 +14,7 @@ public class PR1Stack {
     }
 
     public void newStack() {
-        stack = new StackArrayImpl<Character>(CAPACITY);
+        stack = new StackArrayImpl<>(CAPACITY);
     }
 
     public Stack<Character> getStack() {
