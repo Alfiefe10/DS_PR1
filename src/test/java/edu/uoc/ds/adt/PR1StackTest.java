@@ -44,4 +44,6 @@ public class PR1StackTest {
         Assert.assertEquals(new Character('0'), pr1q.pop());
         assertEquals(0, this.pr1q.getStack().size());
     }
+
+    public void githubTest() { }
 }

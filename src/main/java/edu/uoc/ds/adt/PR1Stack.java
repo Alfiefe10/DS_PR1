@@ -28,4 +28,6 @@ public class PR1Stack {
     public Character pop() {
         return this.stack.pop();
     }
+
+    public void githubTest() { }
 }
