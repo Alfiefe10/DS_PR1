@@ -5,9 +5,11 @@ import edu.uoc.ds.adt.sequential.StackArrayImpl;
 
 public class PR1Stack {
 
-    public final int CAPACITY = 10;
+    // Se cambia la capacidad a 15, ya que ahora buscamos los 15 primeros valores de la función periódica "f(x) = (x mod 4)^2"
+    public final int CAPACITY = 15;
 
-    private Stack<Character> stack;
+    // Ahora el tipo de datos que utiliza la implementación son enteros, en vez de carácteres
+    private Stack<Integer> stack;
 
     public PR1Stack() {
         newStack();
@@ -17,15 +19,15 @@ public class PR1Stack {
         stack = new StackArrayImpl<>(CAPACITY);
     }
 
-    public Stack<Character> getStack() {
+    public Stack<Integer> getStack() {
         return this.stack;
     }
 
-    public void push(Character c) {
+    public void push(Integer c) {
         this.stack.push(c);
     }
 
-    public Character pop() {
+    public Integer pop() {
         return this.stack.pop();
     }
 }

@@ -5,9 +5,11 @@ import edu.uoc.ds.adt.sequential.QueueArrayImpl;
 
 public class PR1Queue {
 
-    public final int CAPACITY = 10;
+    // Se cambia la capacidad a 15, ya que ahora buscamos los 15 primeros valores de la función periódica "f(x) = (x mod 4)^2"
+    public final int CAPACITY = 15;
 
-    private Queue<Character> queue;
+    // Ahora el tipo de datos que utiliza la implementación son enteros, en vez de carácteres
+    private Queue<Integer> queue;
 
     public PR1Queue() {
         newQueue();
@@ -17,15 +19,15 @@ public class PR1Queue {
         queue = new QueueArrayImpl<>(CAPACITY);
     }
 
-    public Queue<Character> getQueue() {
+    public Queue<Integer> getQueue() {
         return this.queue;
     }
 
-    public void add(Character c) {
+    public void add(Integer c) {
         this.queue.add(c);
     }
 
-    public Character poll() {
+    public Integer poll() {
         return this.queue.poll();
     }
 }
